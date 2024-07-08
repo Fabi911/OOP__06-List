@@ -30,4 +30,8 @@ public class School {
     public void removeStudent(Student student) {
         this.students.remove(student);
     }
+
+    public void showCoursesOfStudent(Student student) {
+        System.out.println(student.getMyCourse());
+    }
 }

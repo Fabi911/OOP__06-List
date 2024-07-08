@@ -13,7 +13,10 @@ public class Main {
         mySchool.printStudents();
         Student searchStudent = mySchool.findStudentByID("5502");
         if (searchStudent != null) {
+            searchStudent.addCourse(new Course("Math","Mr. Müller","102"));
             System.out.println("Student founded: "+searchStudent);
+            searchStudent.addCourse(new Course("English","Mr. Schwartz","106"));
+            mySchool.showCoursesOfStudent(searchStudent);
         }
 
 
